@@ -28,9 +28,10 @@ function mensajeSecreto(input){
 		newInput[i] = reversedInput[counter];
 		counter++;
 	}
+	newInput[start-1] = "";
+	newInput[end+1] = "";
 	newInput = newInput.join('');
 	console.log(newInput)
-
 	return newInput;
 
 }
