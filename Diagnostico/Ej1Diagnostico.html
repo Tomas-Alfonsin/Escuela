@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		let num = prompt("Ingrese su nota","");
+		let answer;
+	if(num >= 0 && num <=3){
+		answer = "Muy deficiente";
+	}
+
+	if(num == 4){
+		answer = "Insuficiente";
+	}
+
+	if(num >= 5 && num <= 6){
+		answer = "Suficiente";
+	}
+
+	if(num == 7 ){
+		answer = "Bien";
+	}
+
+	if(num >= 8 && num <= 9){
+		answer = "Notable";
+	}
+
+	if(num == 10){
+		answer = "Sobresaliente";
+	}
+	else{
+		answer = "Indefinido"; 
+	}
+		document.write(answer);
+	</script>
+	<div>
+	</div>
+</body>
+</html>

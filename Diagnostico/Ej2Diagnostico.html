@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+	<script>
+		let text;
+		let totalText = "";
+		let n1 = 1;
+		while(n1 == 1){
+
+			text = prompt("Ingrese su texto","");
+
+			if(text == null){
+				n1 = 2;
+			}
+
+			if(text != null){
+				totalText += text + '-';
+			}
+		}
+		document.write(totalText);
+	</script>
+</body>
+</html>

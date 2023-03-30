@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		let filas;
+		let columnas;
+		filas = prompt("Ingrese las filas: ","");
+		columnas = prompt("Ingrese las columnas: ","");
+		let num = filas*columnas;
+
+		for(let i = 0; i < columnas; i++){
+			document.write("<br>");
+			for(let j = 0; j < filas; j++){
+				document.write("|"+num+"|");
+				num -= 1;
+			}
+		}
+	</script>
+</body>
+</html>
