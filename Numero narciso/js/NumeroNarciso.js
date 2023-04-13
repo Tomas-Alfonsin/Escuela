@@ -1,3 +1,7 @@
+/*
+ Hacer un programa que muestre mediante una función llamada
+ EsNarciso (n) muestre el listado de los números narcisos hasta el número ingresado
+*/
 function esNarciso(input){
 	input = input.toString();
 	let suma = 0;

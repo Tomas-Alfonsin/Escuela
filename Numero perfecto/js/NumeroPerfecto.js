@@ -1,3 +1,6 @@
+/*
+Realizar un programa que liste TODOS los números perfectos hasta un numero ingresado.
+*/
 function esPerfecto(input){	
 	let divisoresPropios = [input];
 	let sumaDivisoresPropios = 0;

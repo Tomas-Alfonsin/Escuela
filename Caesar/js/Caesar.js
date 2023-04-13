@@ -1,3 +1,7 @@
+/*
+	Ingresar una frase y convertirla a cesar con una función llamada ConvertirFrase(frase, cantDesplazamiento) 
+	devolver la nueva frase
+*/
 function convertirFrase(input,factor){
 	let numberInput = {}; // Input to ASCII code
 	let newInput = ""; // ASCII code to new caesar encryption

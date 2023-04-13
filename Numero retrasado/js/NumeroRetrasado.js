@@ -1,3 +1,7 @@
+/*
+Hacer un programa que muestre mediante una función llamada
+EsDefectivo (n) muestre el listado de los números defectivos hasta el número ingresado
+*/
 function esAbundante(input){
 	let divisoresPropios = [input];
 	let sumaDivisoresPropios = 0;

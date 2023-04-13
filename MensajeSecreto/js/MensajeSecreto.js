@@ -1,3 +1,16 @@
+/*
+Datos de entrada
+Se recibe un archivo de texto SECRETO.IN
+del directorio actual, que contiene una única línea
+con una cantidad máxima de 500 caracteres. Esta
+línea consta de letras, números, signos de pun-
+tuación y posiblemente paréntesis producto del
+encriptado.
+Datos de salida
+El programa SECRETO.EXE debe generar el
+
+archivo SECRETO.OUT con el mensaje decodificado, en el directorio actual.
+*/
 function mensajeSecreto(input){
 	let start = 0;
 	let end = 0;
