@@ -18,10 +18,7 @@ function palindromo(input){
 	inputReversed = input.split('');              // 
 	inputReversed = inputReversed.reverse();	 //	Creates a reversed input
 	inputReversed = inputReversed.join("");		//
-	/*inputReversed = input.split( '' )
-						 .reverse()
-						 .join("")
-	*/
+
 	input = input.toLowerCase();					// Lower case the strings
 	inputReversed = inputReversed.toLowerCase();
 
