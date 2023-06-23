@@ -10,25 +10,12 @@ let square = [
 	[0,0,0,0],
 	[0,0,0,0]
 ]
-square[0][0] = document.querySelector(".aa");
-square[0][1] = document.querySelector(".ab");
-square[0][2] = document.querySelector(".ac");
-square[0][3] = document.querySelector(".ad");
-
-square[1][0] = document.querySelector(".ba");
-square[1][1] = document.querySelector(".bb");
-square[1][2] = document.querySelector(".bc");
-square[1][3] = document.querySelector(".bd");
-
-square[2][0] = document.querySelector(".ca");
-square[2][1] = document.querySelector(".cb");
-square[2][2] = document.querySelector(".cc");
-square[2][3] = document.querySelector(".cd");
-
-square[3][0] = document.querySelector(".da");
-square[3][1] = document.querySelector(".db");
-square[3][2] = document.querySelector(".dc");
-square[3][3] = document.querySelector(".dd");
+let abcd = "abcd";
+for(let i = 0; i<4; i++){
+	for(let j = 0; j<4; j++){
+		square[i][j] = document.querySelector(`.${abcd[i]}${abcd[j]}`);
+	}
+}
 
 function syncTable(){
 	for(let i = 0; i < 4; i++){
@@ -55,7 +42,7 @@ function canGenerate(){
 	let canGenerate = false;
 	for(let i = 0; i < 4; i++){
 		for(let j = 0; j < 4; j++){
-			if (tableGame[i][j] == 0) {
+			if (tableGame[i][j] == 0 || tableGame[i][j] == " ") {
 				canGenerate = true;
 			}
 		}
@@ -67,7 +54,7 @@ function updateTableGame(){
 	syncTable();
 	if(gameOver == false){
 		getRandomPos();
-		if(tableGame[pos[0]][pos[1]] === 0){
+		if(tableGame[pos[0]][pos[1]] == 0){
 			tableGame[pos[0]][pos[1]] = getRandomNumber(0,2)*2;
 			console.log("Pos: "+pos) 
 			syncTable();

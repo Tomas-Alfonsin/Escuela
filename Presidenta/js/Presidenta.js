@@ -9,13 +9,9 @@ let b = prompt("Ingrese B: ");
 primeNumberStore.init();
 primeNumberStore.getPrimeNumbers(b);
 
-let stringPrime = primeNumberStore.primeNumbers.join(" ");
-
-
-for(let i = 0; primeNumberStore.primeNumbers[i] <= b && primeNumberStore.primeNumbers[i] != -1; i++){
-    if(stringPrime[i] != " "){
-            document.write(`${stringPrime[i]} + ${stringPrime[i+1]}<br>`); 
-    } 
-
+for(let i = 0; i<= b; i++){
+    if(primeNumberStore.primeNumbers[i] != -1){
+        document.write(`${primeNumberStore.primeNumbers[i]}<br>`);
+    }
 }
 
