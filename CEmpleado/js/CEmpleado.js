@@ -21,13 +21,13 @@ class CEmpleado{
         `Name: ${this.name}<br>
         Year of joining: ${this.yoj}<br>
         Address: ${this.address}<br>
-        Antiguaty: ${this.getAntiguaty()}<br>
+        Years Of Service: ${this.getYearsOfService()}<br>
         `)
         if(this.address == "wall street"){
             document.write("Lives in wall street");
         }
     }
-    getAntiguaty(){
+    getYearsOfService(){
         const date = new Date();
         let year = date.getFullYear();
         return year - this.yoj;
