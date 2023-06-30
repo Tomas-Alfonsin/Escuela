@@ -17,30 +17,22 @@ class CPersona{
         this.genero = genero;
     }
 
-    
-
     isAdult(){
+        let isAdult = false;
         const date = new Date(this.fechaNacimiento);
         const today = new Date();
         
-        let yob = date.getFullYear();
-        let mob = date.getMonth() + 1;
-        let dob = date.getDay();
+        let days = 0;
 
-        var edad = today.getFullYear - yob;
-        if(today.getMonth < mob){
-            edad--;
-        }
-        else if(date.getMonth() == mob && date.getDay < dob){
-            edad--;
-        }
-        console.log(edad);
+        days = (today.getTime() - date.getTime()) / 1000 / 60 / 60 / 24;
+        return(days / 365 >= 18)
+
     }
 
-    checkGenre(){
-
+    getGenre(){
+        return this.genero;
     }
 }
 
-const persona = new CPersona("juan","10-10-1998",1513,"asd")
-persona.isAdult();
+const persona = new CPersona(document.getElementById("nombreInput"),document.getElementById("fechaNacimientoInput"),document.getElementById("dniInput"),"asd")
+console.log(persona.isAdult());
